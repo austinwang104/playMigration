@@ -7,3 +7,6 @@
 
 當中需要透過Migration達到控管DB的能力，確認控管的能力之後，就需要設計一下和git彼此運作的模式。
 
+```docker
+docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2-bionic
+```
