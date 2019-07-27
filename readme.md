@@ -14,3 +14,7 @@ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_P
 
 * file move out的問題可以再想怎麼解決`docker cp`
 
+* 大致上幾個方法都操作完成了，需要先行安裝一些套件，目前套件都統一放在 dependencies 當中。
+
+* future work:
+    會考慮與git共同作業的方式
