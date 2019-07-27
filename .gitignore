@@ -1,2 +1,6 @@
+# npm resource 不加入
 node_modules/
+# 資料庫暫存檔 不加入
 mysqlData/
+# 鎖定的檔案不加入git
+package-lock.json
