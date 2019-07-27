@@ -18,3 +18,6 @@ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_P
 
 * future work:
     會考慮與git共同作業的方式
+
+### reference
+    (sequelize-migrate)[https://sequelize.org/master/manual/migrations.html]
