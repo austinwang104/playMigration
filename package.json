@@ -1,0 +1,19 @@
+{
+  "name": "playmigration",
+  "version": "1.0.0",
+  "description": "這個是希望先弄一個簡單的MariaDB，然後測試一下sequalize-cli針對DB控管的功能。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@hub104:austinwang104/playMigration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sequelize": "^5.11.0",
+    "sequelize-cli": "^5.5.0"
+  }
+}

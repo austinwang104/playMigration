@@ -10,3 +10,7 @@
 ```docker
 docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2-bionic
 ```
+* 之前遇到的docker問題看起來已經很明顯了，因為windows file system不同，所以會導致在mount v 的時候出現問題。所以如果真的要解決這個問題就只能把volume整個當作是image來mount就可以解決了。
+
+* file move out的問題可以再想怎麼解決`docker cp`
+
