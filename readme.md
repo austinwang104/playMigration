@@ -21,3 +21,31 @@ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_P
 
 ### reference
     (sequelize-migrate)[https://sequelize.org/master/manual/migrations.html]
+
+### command
+
+```bash
+# 建立一個模型
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+# 進行migrate
+npx sequelize-cli db:migrate
+
+# 取消migrate
+npx sequlize-cli db:migrate:undo
+
+# 特定migrate
+npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
+
+# 建立種子 該種子檔建立後後續可以再編輯加入資料
+npx sequelize-cli seed:generate --name demo-user
+
+# 運行種子
+npx sequelize-cli db:seed:all
+
+# 取消種子
+npx sequelize-cli db:seed:undo
+
+# 取消所有種子
+npx sequelize-cli db:seed:undo:all
+```
